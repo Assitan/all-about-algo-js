@@ -6,31 +6,29 @@ module.exports = {
   evergreen: true,
   themeConfig: {
     docsDir: 'docs',
-    sidebar: {
-      '/resources/': [
-        {
-          title: 'Theory',
-          collapsable: false,
-          children: [
-            'theory/runtime-complexity',
-            'theory/big-o-notation',
-            'theory/data-structures',
-            'practical/functional-programming',
-          ],
-        },
-        {
-          title: 'Practical',
-          collapsable: false,
-          children: [
-            'practical/data-structures',
-            'practical/algorithms',
-          ],
-        },
-      ],
-      '/': [''],
-    },
+    sidebar: [
+      '/',
+      {
+        title: 'Theory',
+        collapsable: false,
+        children: [
+          'resources/theory/runtime-complexity',
+          'resources/theory/big-o-notation',
+          'resources/theory/data-structures',
+          'resources/theory/functional-programming',
+        ],
+      },
+      {
+        title: 'Practical',
+        collapsable: false,
+        children: [
+          'resources/practical/data-structures',
+          'resources/practical/algorithms',
+        ],
+      },
+    ],
     nav: [
-      {text: 'Resources', link: '/resources/'},
+      // {text: 'Resources', link: '/resources/'},
     ],
   },
 };
